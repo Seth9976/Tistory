@@ -1,0 +1,33 @@
+package com.kakao.kandinsky.signature.ui;
+
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\u0010\u0000\u001A\u0004\u0018\u00010\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001A\u00020\u0004H\n¢\u0006\u0002\b\u0005¨\u0006\u0006"}, d2 = {"<anonymous>", "", "T", "index", "", "invoke", "androidx/compose/foundation/lazy/grid/LazyGridDslKt$items$4"}, k = 3, mv = {1, 9, 0}, xi = 0x30)
+@SourceDebugExtension({"SMAP\nLazyGridDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGridDsl.kt\nandroidx/compose/foundation/lazy/grid/LazyGridDslKt$items$4\n*L\n1#1,569:1\n*E\n"})
+public final class SavedSignatureBottomSheetKt.SavedSignatureBottomSheet.3.2.invoke..inlined.items.default.4 extends Lambda implements Function1 {
+    public final Function1 w;
+    public final List x;
+
+    public SavedSignatureBottomSheetKt.SavedSignatureBottomSheet.3.2.invoke..inlined.items.default.4(Function1 function10, List list0) {
+        this.w = function10;
+        this.x = list0;
+        super(1);
+    }
+
+    @Nullable
+    public final Object invoke(int v) {
+        Object object0 = this.x.get(v);
+        return this.w.invoke(object0);
+    }
+
+    @Override  // kotlin.jvm.functions.Function1
+    public Object invoke(Object object0) {
+        return this.invoke(((Number)object0).intValue());
+    }
+}
+

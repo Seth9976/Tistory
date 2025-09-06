@@ -1,0 +1,20 @@
+package com.google.android.gms.internal.measurement;
+
+import com.google.android.gms.common.internal.Preconditions;
+
+public final class l extends v {
+    public final long e;
+    public final zzef f;
+
+    public l(zzef zzef0, long v) {
+        this.f = zzef0;
+        this.e = v;
+        super(zzef0, true);
+    }
+
+    @Override  // com.google.android.gms.internal.measurement.v
+    public final void a() {
+        ((zzcc)Preconditions.checkNotNull(this.f.g)).setSessionTimeoutDuration(this.e);
+    }
+}
+

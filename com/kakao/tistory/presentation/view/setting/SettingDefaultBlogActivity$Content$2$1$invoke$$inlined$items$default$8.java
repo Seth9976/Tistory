@@ -1,0 +1,70 @@
+package com.kakao.tistory.presentation.view.setting;
+
+import android.content.Context;
+import androidx.compose.foundation.lazy.LazyItemScope;
+import androidx.compose.runtime.Composable;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.State;
+import androidx.compose.ui.Modifier;
+import androidx.compose.ui.platform.AndroidCompositionLocals_androidKt;
+import androidx.compose.ui.res.StringResources_androidKt;
+import com.kakao.tistory.domain.entity.Blog;
+import com.kakao.tistory.presentation.R.string;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function4;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001A\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u00032\u0006\u0010\u0004\u001A\u00020\u0005H\u000B¢\u0006\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"<anonymous>", "", "T", "Landroidx/compose/foundation/lazy/LazyItemScope;", "it", "", "invoke", "(Landroidx/compose/foundation/lazy/LazyItemScope;ILandroidx/compose/runtime/Composer;I)V", "androidx/compose/foundation/lazy/LazyDslKt$items$4"}, k = 3, mv = {1, 9, 0}, xi = 0x30)
+@SourceDebugExtension({"SMAP\nLazyDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyDsl.kt\nandroidx/compose/foundation/lazy/LazyDslKt$items$4\n+ 2 SettingDefaultBlogActivity.kt\ncom/kakao/tistory/presentation/view/setting/SettingDefaultBlogActivity$Content$2$1\n+ 3 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n*L\n1#1,433:1\n132#2:434\n133#2,11:436\n77#3:435\n*S KotlinDebug\n*F\n+ 1 SettingDefaultBlogActivity.kt\ncom/kakao/tistory/presentation/view/setting/SettingDefaultBlogActivity$Content$2$1\n*L\n132#1:435\n*E\n"})
+public final class SettingDefaultBlogActivity.Content.2.1.invoke..inlined.items.default.8 extends Lambda implements Function4 {
+    public final List a;
+    public final SettingDefaultBlogActivity b;
+    public final State c;
+
+    public SettingDefaultBlogActivity.Content.2.1.invoke..inlined.items.default.8(List list0, SettingDefaultBlogActivity settingDefaultBlogActivity0, State state0) {
+        this.a = list0;
+        this.b = settingDefaultBlogActivity0;
+        this.c = state0;
+        super(4);
+    }
+
+    @Override  // kotlin.jvm.functions.Function4
+    public Object invoke(Object object0, Object object1, Object object2, Object object3) {
+        this.invoke(((LazyItemScope)object0), ((Number)object1).intValue(), ((Composer)object2), ((Number)object3).intValue());
+        return Unit.INSTANCE;
+    }
+
+    @Composable
+    public final void invoke(@NotNull LazyItemScope lazyItemScope0, int v, @Nullable Composer composer0, int v1) {
+        int v2 = (v1 & 6) == 0 ? (composer0.changed(lazyItemScope0) ? 4 : 2) | v1 : v1;
+        if((v1 & 0x30) == 0) {
+            v2 |= (composer0.changed(v) ? 0x20 : 16);
+        }
+        if((v2 & 0x93) == 0x92 && composer0.getSkipping()) {
+            composer0.skipToGroupEnd();
+            return;
+        }
+        if(ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(0xDA480CDF, v2, -1, "androidx.compose.foundation.lazy.items.<anonymous> (LazyDsl.kt:152)");
+        }
+        Object object0 = this.a.get(v);
+        composer0.startReplaceGroup(0x53B4953);
+        Context context0 = (Context)composer0.consume(AndroidCompositionLocals_androidKt.getLocalContext());
+        String s = StringResources_androidKt.stringResource(string.label_toast_setting_joined_blog_not_default_blog, composer0, 0);
+        Modifier modifier0 = LazyItemScope.animateItem$default(lazyItemScope0, Modifier.Companion, null, null, null, 7, null);
+        Blog blog0 = SettingDefaultBlogActivity.access$Content$lambda$0(this.c);
+        this.b.BlogItem(modifier0, ((Blog)object0), Intrinsics.areEqual((blog0 == null ? null : blog0.getName()), ((Blog)object0).getName()), new v(context0, s), composer0, 0x8040, 0);
+        composer0.endReplaceGroup();
+        if(ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+    }
+}
+

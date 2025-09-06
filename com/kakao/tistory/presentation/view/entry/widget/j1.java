@@ -1,0 +1,23 @@
+package com.kakao.tistory.presentation.view.entry.widget;
+
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Lambda;
+
+public final class j1 extends Lambda implements Function0 {
+    public static final j1 a;
+
+    static {
+        j1.a = new j1();
+    }
+
+    public j1() {
+        super(0);
+    }
+
+    @Override  // kotlin.jvm.functions.Function0
+    public final Object invoke() {
+        return Unit.INSTANCE;
+    }
+}
+

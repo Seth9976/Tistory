@@ -1,0 +1,18 @@
+package kotlin.reflect.jvm.internal;
+
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Lambda;
+
+public final class t extends Lambda implements Function0 {
+    public static final t w;
+
+    static {
+        t.w = new t(0);  // 初始化器: Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    }
+
+    @Override  // kotlin.jvm.functions.Function0
+    public final Object invoke() {
+        return Object.class;
+    }
+}
+

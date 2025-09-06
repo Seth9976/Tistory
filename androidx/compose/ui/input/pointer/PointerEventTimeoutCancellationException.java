@@ -1,0 +1,24 @@
+package androidx.compose.ui.input.pointer;
+
+import androidx.compose.runtime.internal.StabilityInferred;
+import java.util.concurrent.CancellationException;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+
+@StabilityInferred(parameters = 1)
+@Metadata(d1 = {"\u0000\u001C\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0003\n\u0000\b\u0007\u0018\u00002\u00060\u0001j\u0002`\u0002B\r\u0012\u0006\u0010\u0003\u001A\u00020\u0004¢\u0006\u0002\u0010\u0005J\b\u0010\u0006\u001A\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"Landroidx/compose/ui/input/pointer/PointerEventTimeoutCancellationException;", "Ljava/util/concurrent/CancellationException;", "Lkotlinx/coroutines/CancellationException;", "time", "", "(J)V", "fillInStackTrace", "", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 0x30)
+public final class PointerEventTimeoutCancellationException extends CancellationException {
+    public static final int $stable;
+
+    public PointerEventTimeoutCancellationException(long v) {
+        super("Timed out waiting for " + v + " ms");
+    }
+
+    @Override
+    @NotNull
+    public Throwable fillInStackTrace() {
+        this.setStackTrace(SuspendingPointerInputFilterKt.b);
+        return this;
+    }
+}
+

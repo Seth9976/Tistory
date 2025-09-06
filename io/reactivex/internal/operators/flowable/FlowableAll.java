@@ -1,0 +1,21 @@
+package io.reactivex.internal.operators.flowable;
+
+import io.reactivex.Flowable;
+import io.reactivex.functions.Predicate;
+import org.reactivestreams.Subscriber;
+
+public final class FlowableAll extends a {
+    public final Predicate b;
+
+    public FlowableAll(Flowable flowable0, Predicate predicate0) {
+        super(flowable0);
+        this.b = predicate0;
+    }
+
+    @Override  // io.reactivex.Flowable
+    public void subscribeActual(Subscriber subscriber0) {
+        g g0 = new g(subscriber0, this.b, 0);
+        this.source.subscribe(g0);
+    }
+}
+

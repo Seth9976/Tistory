@@ -1,0 +1,97 @@
+package com.kakao.tistory;
+
+import android.util.SparseArray;
+
+public abstract class t {
+    public static final SparseArray a;
+
+    static {
+        SparseArray sparseArray0 = new SparseArray(84);
+        t.a = sparseArray0;
+        sparseArray0.put(0, "_all");
+        sparseArray0.put(1, "activeCategory");
+        sparseArray0.put(2, "activeOverlayCategory");
+        sparseArray0.put(3, "alignMenuClickListener");
+        sparseArray0.put(4, "alignment");
+        sparseArray0.put(5, "blockquote");
+        sparseArray0.put(6, "categoryItem");
+        sparseArray0.put(7, "cell");
+        sparseArray0.put(8, "cellWidth");
+        sparseArray0.put(9, "codeBlock");
+        sparseArray0.put(10, "codeMenuListener");
+        sparseArray0.put(11, "contentItem");
+        sparseArray0.put(12, "currentGrammarError");
+        sparseArray0.put(13, "currentIndex");
+        sparseArray0.put(14, "deleteListener");
+        sparseArray0.put(15, "displayMenu");
+        sparseArray0.put(16, "draftViewModel");
+        sparseArray0.put(17, "dragState");
+        sparseArray0.put(18, "extraButtonContentDescriptionSrc");
+        sparseArray0.put(19, "extraButtonSrc");
+        sparseArray0.put(20, "fileItem");
+        sparseArray0.put(21, "flow");
+        sparseArray0.put(22, "fontColor");
+        sparseArray0.put(23, "fontStyle");
+        sparseArray0.put(24, "hasBlockQuoteItemSpec");
+        sparseArray0.put(25, "hasFocus");
+        sparseArray0.put(26, "hasTextListItemSpec");
+        sparseArray0.put(27, "horizontalRule");
+        sparseArray0.put(28, "html");
+        sparseArray0.put(29, "imageCount");
+        sparseArray0.put(30, "imageGrid");
+        sparseArray0.put(0x1F, "imageGridItem");
+        sparseArray0.put(0x20, "imageItem");
+        sparseArray0.put(33, "imageStyles");
+        sparseArray0.put(34, "index");
+        sparseArray0.put(35, "isActiveBold");
+        sparseArray0.put(36, "isActiveItalic");
+        sparseArray0.put(37, "isActiveLink");
+        sparseArray0.put(38, "isActiveStrike");
+        sparseArray0.put(39, "isActiveUnderLine");
+        sparseArray0.put(40, "isAttachable");
+        sparseArray0.put(41, "isCancelable");
+        sparseArray0.put(42, "isEditable");
+        sparseArray0.put(43, "isEnableExtra");
+        sparseArray0.put(44, "isEnableImageEdit");
+        sparseArray0.put(45, "isNowLoading");
+        sparseArray0.put(46, "isOverlayOpen");
+        sparseArray0.put(0x2F, "isRepresent");
+        sparseArray0.put(0x30, "isSelected");
+        sparseArray0.put(49, "isTextSizeParagraphMode");
+        sparseArray0.put(50, "isTitleOnly");
+        sparseArray0.put(51, "item");
+        sparseArray0.put(52, "language");
+        sparseArray0.put(53, "listItem");
+        sparseArray0.put(54, "listener");
+        sparseArray0.put(55, "mediaMenuListener");
+        sparseArray0.put(56, "message");
+        sparseArray0.put(57, "paragraphStyle");
+        sparseArray0.put(58, "pollItem");
+        sparseArray0.put(59, "pollSubItem");
+        sparseArray0.put(60, "position");
+        sparseArray0.put(61, "representativeImageEnable");
+        sparseArray0.put(62, "representativeImageEnabled");
+        sparseArray0.put(0x3F, "selectId");
+        sparseArray0.put(0x40, "selectNoItem");
+        sparseArray0.put(65, "sortItem");
+        sparseArray0.put(66, "style");
+        sparseArray0.put(67, "subjectItem");
+        sparseArray0.put(68, "swipeItem");
+        sparseArray0.put(69, "tableItem");
+        sparseArray0.put(70, "text");
+        sparseArray0.put(71, "textBackgroundColor");
+        sparseArray0.put(72, "textColor");
+        sparseArray0.put(73, "textMenuListener");
+        sparseArray0.put(74, "textSize");
+        sparseArray0.put(75, "title");
+        sparseArray0.put(76, "tooSmallToShow");
+        sparseArray0.put(77, "totalCount");
+        sparseArray0.put(78, "type");
+        sparseArray0.put(0x4F, "unSupportedItem");
+        sparseArray0.put(80, "videoItem");
+        sparseArray0.put(81, "videoStyles");
+        sparseArray0.put(82, "viewModel");
+        sparseArray0.put(83, "vm");
+    }
+}
+

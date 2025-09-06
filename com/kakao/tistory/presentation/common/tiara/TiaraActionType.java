@@ -1,0 +1,182 @@
+package com.kakao.tistory.presentation.common.tiara;
+
+import com.kakao.android.base.tiara.TiaraBaseEnum;
+import kotlin.Deprecated;
+import kotlin.Metadata;
+import kotlin.ReplaceWith;
+import kotlin.enums.EnumEntries;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import sd.a;
+
+@Deprecated(message = "don\'t use", replaceWith = @ReplaceWith(expression = "TistoryTiaraActionType", imports = {}))
+@Metadata(d1 = {"\u0000\u0015\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u000E\n\u0003\b\u0088\u0001\b\u0087\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u00012\u00020\u0002J\u000F\u0010\u0004\u001A\u00020\u0003H\u0016\u00A2\u0006\u0004\b\u0004\u0010\u0005R\u0017\u0010\t\u001A\u00020\u00038\u0006\u00A2\u0006\f\n\u0004\b\u0006\u0010\u0007\u001A\u0004\b\b\u0010\u0005j\u0002\b\nj\u0002\b\u000Bj\u0002\b\fj\u0002\b\rj\u0002\b\u000Ej\u0002\b\u000Fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001Aj\u0002\b\u001Bj\u0002\b\u001Cj\u0002\b\u001Dj\u0002\b\u001Ej\u0002\b\u001Fj\u0002\b j\u0002\b!j\u0002\b\"j\u0002\b#j\u0002\b$j\u0002\b%j\u0002\b&j\u0002\b\'j\u0002\b(j\u0002\b)j\u0002\b*j\u0002\b+j\u0002\b,j\u0002\b-j\u0002\b.j\u0002\b/j\u0002\b0j\u0002\b1j\u0002\b2j\u0002\b3j\u0002\b4j\u0002\b5j\u0002\b6j\u0002\b7j\u0002\b8j\u0002\b9j\u0002\b:j\u0002\b;j\u0002\b<j\u0002\b=j\u0002\b>j\u0002\b?j\u0002\b@j\u0002\bAj\u0002\bBj\u0002\bCj\u0002\bDj\u0002\bEj\u0002\bFj\u0002\bGj\u0002\bHj\u0002\bIj\u0002\bJj\u0002\bKj\u0002\bLj\u0002\bMj\u0002\bNj\u0002\bOj\u0002\bPj\u0002\bQj\u0002\bRj\u0002\bSj\u0002\bTj\u0002\bUj\u0002\bVj\u0002\bWj\u0002\bXj\u0002\bYj\u0002\bZj\u0002\b[j\u0002\b\\j\u0002\b]j\u0002\b^j\u0002\b_j\u0002\b`j\u0002\baj\u0002\bbj\u0002\bcj\u0002\bdj\u0002\bej\u0002\bfj\u0002\bgj\u0002\bhj\u0002\bij\u0002\bjj\u0002\bkj\u0002\blj\u0002\bmj\u0002\bnj\u0002\boj\u0002\bpj\u0002\bqj\u0002\brj\u0002\bsj\u0002\btj\u0002\buj\u0002\bvj\u0002\bwj\u0002\bxj\u0002\byj\u0002\bzj\u0002\b{j\u0002\b|j\u0002\b}j\u0002\b~j\u0002\b\u007Fj\u0003\b\u0080\u0001j\u0003\b\u0081\u0001j\u0003\b\u0082\u0001j\u0003\b\u0083\u0001j\u0003\b\u0084\u0001j\u0003\b\u0085\u0001j\u0003\b\u0086\u0001j\u0003\b\u0087\u0001j\u0003\b\u0088\u0001j\u0003\b\u0089\u0001j\u0003\b\u008A\u0001\u00A8\u0006\u008B\u0001"}, d2 = {"Lcom/kakao/tistory/presentation/common/tiara/TiaraActionType;", "", "Lcom/kakao/android/base/tiara/TiaraBaseEnum;", "", "getValue", "()Ljava/lang/String;", "a", "Ljava/lang/String;", "getType", "type", "NONE", "CLICK_CLOSE", "CLICK_COMPLETE", "CLICK_NEXT", "CLICK_CHANGE", "CLICK_OK", "CLICK_CANCEL", "CLICK_BACK", "CLICK_NOTICE", "CLICK_HELP", "CLICK_IMAGE_SETTING", "CLICK_IMAGE_DELETE", "CLICK_GALLERY", "CLICK_LOGIN_KAKAO", "CLICK_LOGIN_KAKAO_DIRECTLY", "CLICK_LOGIN_OLD_ACCOUNT_REDIRECTION", "CLICK_LOGIN_OLD_ACCOUNT", "CLICK_ACCOUNT_FIND", "CLICK_ACCOUNT_SETTING", "CLICK_SIGN_UP_DELETE_INPUT", "CLICK_SIGN_UP_TALK_CHANEL_AGREE", "CLICK_GO_TO_SIGN_UP_TALK_CHANEL", "CLICK_SIGN_UP_REFRESH_RECOMMENDATION", "CLICK_SIGN_UP_RECOMMENDATION", "CLICK_WELCOME_DIALOG_TIP", "CLICK_WELCOME_DIALOG_MY_BLOG", "CLICK_APP_BAR_TISTORY_LOGO", "CLICK_APP_BAR_SEARCH", "CLICK_APP_BAR_PROFILE_IMAGE", "CLICK_APP_BAR_TITLE", "CLICK_PROFILE_IMAGE", "CLICK_NICKNAME", "CLICK_BLOG_SWITCH", "CLICK_GLOBAL_SETTING", "CLICK_BOTTOM_NAVIGATION_HOME", "CLICK_BOTTOM_NAVIGATION_FEED", "CLICK_BOTTOM_NAVIGATION_EDITOR", "CLICK_BOTTOM_NAVIGATION_NOTIFICATION", "CLICK_BOTTOM_NAVIGATION_BLOG_TOP", "CLICK_TOP_MESSAGE", "CLICK_BLOG_STATISTICS", "CLICK_REFERER_LOG", "CLICK_REFERER_LOG_URL", "CLICK_REFERER_KEYWORD", "CLICK_REFERER_ETC", "CLICK_REFERER_ETC_URL", "CLICK_RECENT_POST", "CLICK_TOP_POST", "CLICK_TOP_POST_ALL", "CLICK_FOLLOWING", "CLICK_FOLLOWER", "CLICK_FOLLOWER_ALL", "CLICK_ENTRY_ITEM", "CLICK_BLOG", "CLICK_BLOG_OF_ENTRY", "CLICK_FOLLOW", "CLICK_FOLLOW_CANCEL", "CLICK_SORT", "CLICK_SORT_ITEM", "CLICK_NOTIFICATION_ITEM", "CLICK_NOTIFICATION_BANNER", "CLICK_GRAPH_ITEM", "CLICK_SEE_ENTRY_VIEW", "CLICK_BLOG_URL", "CLICK_BLOG_DESCRIPTION_READ_MORE", "CLICK_BLOG_FOLLOWER_COUNT", "CLICK_BLOG_SETTING", "CLICK_NOTICE_ITEM", "CLICK_NOTICE_SEE_ALL", "CLICK_CATEGORY", "CLICK_CATEGORY_ITEM", "CLICK_VISIBILITY_PUBLIC", "CLICK_VISIBILITY_PROTECTED", "CLICK_VISIBILITY_PRIVATE", "CLICK_VISIBILITY_PROTECTED_PASSWORD", "CLICK_MODIFY", "CLICK_STATISTICS", "CLICK_DELETE", "CLICK_PIN", "CLICK_UNPIN", "CLICK_COMMENT", "CLICK_SHARE", "CLICK_MORE", "CLICK_REPORT", "CLICK_REPORT_COMPLETE", "CLICK_COMMENT_REPLY", "CLICK_COMMENT_READ_MORE", "CLICK_COMMENT_COMPLETE", "CLICK_COMMENT_MODIFY", "CLICK_REPLY_SEE_ALL", "CLICK_SETTING_DEFAULT_BLOG", "CLICK_SETTING_NOTIFICATION", "CLICK_SETTING_NOTICE", "CLICK_SETTING_APP_INFO", "CLICK_SETTING_TERMS_AND_CONDITIONS", "CLICK_SETTING_PRIVACY_POLICY", "CLICK_SETTING_OPEN_SOURCE_LICENSE", "CLICK_SETTING_HELP", "CLICK_SETTING_OPERATION_POLICY", "CLICK_SETTING_QUESTION", "CLICK_SETTING_LOGOUT", "CLICK_SETTING_LOGOUT_CONFIRM", "CLICK_SEARCH_INPUT_FIELD", "CLICK_SEARCH_INPUT_CLEAR", "CLICK_SEARCH_SEARCHING", "CLICK_SEARCH_ALL_SEARCHING", "CLICK_SEARCH_SEARCHING_FROM_KEYBOARD", "CLICK_SEARCH_RECENT_KEYWORD", "CLICK_SEARCH_RECENT_KEYWORD_REMOVE", "CLICK_SEARCH_RECENT_KEYWORD_REMOVE_ALL", "CLICK_SEARCH_RECENT_KEYWORD_ON", "CLICK_SEARCH_RECENT_KEYWORD_OFF", "CLICK_SEARCH_SUGGEST_KEYWORD", "CLICK_SEARCH_SUGGEST_KEYWORD_ARROW", "CLICK_SEARCH_SUGGEST_KEYWORD_ON", "CLICK_SEARCH_SUGGEST_KEYWORD_OFF", "CLICK_SEARCH_RESULT_TAB", "CLICK_APP_UPDATE", "CLICK_SEE_DETAIL", "CLICK_TRANSFER", "CLICK_TRANSFER_NO_MORE_SEE_WEEKEND", "PAGE_TRANSFER_START", "PAGE_TRANSFER_FINAL_CONFIRM", "SIGNUP_INVALIDATION", "LONG_CLICK_BOTTOM_NAVIGATION_BLOG_TOP", "SWIPE_HOME_STATISTICS", "SWIPE_SEARCH_RESULT_TAB", "WELCOME_DIALOG", "BLOG_TOP_CATEGORY", "presentation_prodRelease"}, k = 1, mv = {1, 9, 0}, xi = 0x30)
+public enum TiaraActionType implements TiaraBaseEnum {
+    NONE("미지정", TiaraActionCategory.NONE),
+    CLICK_CLOSE("닫기"),
+    CLICK_COMPLETE("완료"),
+    CLICK_NEXT("다음"),
+    CLICK_CHANGE("변경"),
+    CLICK_OK("확인"),
+    CLICK_CANCEL("취소"),
+    CLICK_BACK("뒤로가기"),
+    CLICK_NOTICE("공지사항"),
+    CLICK_HELP("도움말"),
+    CLICK_IMAGE_SETTING("이미지 설정"),
+    CLICK_IMAGE_DELETE("이미지 삭제"),
+    CLICK_GALLERY("앨범에서 선택"),
+    CLICK_LOGIN_KAKAO("카카오톡으로 로그인"),
+    CLICK_LOGIN_KAKAO_DIRECTLY("직접 입력해서 로그인"),
+    CLICK_LOGIN_OLD_ACCOUNT_REDIRECTION("올드계정 로그인 페이지로 가기"),
+    CLICK_LOGIN_OLD_ACCOUNT("올드계정 로그인"),
+    CLICK_ACCOUNT_FIND("계정찾기"),
+    CLICK_ACCOUNT_SETTING("계정 설정"),
+    CLICK_SIGN_UP_DELETE_INPUT("X버튼"),
+    CLICK_SIGN_UP_TALK_CHANEL_AGREE("스토리 톡채널 동의"),
+    CLICK_GO_TO_SIGN_UP_TALK_CHANEL("스토리 톡채널 카카오톡 채널 보기"),
+    CLICK_SIGN_UP_REFRESH_RECOMMENDATION("추천 주소 새로고침"),
+    CLICK_SIGN_UP_RECOMMENDATION("추천 주소 버블"),
+    CLICK_WELCOME_DIALOG_TIP("이용팁"),
+    CLICK_WELCOME_DIALOG_MY_BLOG("내블로그"),
+    CLICK_APP_BAR_TISTORY_LOGO("T아이콘"),
+    CLICK_APP_BAR_SEARCH("검색 진입"),
+    CLICK_APP_BAR_PROFILE_IMAGE("프로필이미지"),
+    CLICK_APP_BAR_TITLE("gnb타이틀"),
+    CLICK_PROFILE_IMAGE("프로필이미지"),
+    CLICK_NICKNAME("블로그닉네임"),
+    CLICK_BLOG_SWITCH("블로그 전환"),
+    CLICK_GLOBAL_SETTING("전체 설정"),
+    CLICK_BOTTOM_NAVIGATION_HOME("홈 탭"),
+    CLICK_BOTTOM_NAVIGATION_FEED("피드 탭"),
+    CLICK_BOTTOM_NAVIGATION_EDITOR("에디터 탭"),
+    CLICK_BOTTOM_NAVIGATION_NOTIFICATION("알림 탭"),
+    CLICK_BOTTOM_NAVIGATION_BLOG_TOP("내 블로그 탭"),
+    CLICK_TOP_MESSAGE("탑메세지 링크"),
+    CLICK_BLOG_STATISTICS("블로그 통계"),
+    CLICK_REFERER_LOG("유입 로그"),
+    CLICK_REFERER_LOG_URL("유입로그 URL"),
+    CLICK_REFERER_KEYWORD("유입 키워드"),
+    CLICK_REFERER_ETC("기타 유입 자세히 보기"),
+    CLICK_REFERER_ETC_URL("기타 유입 URL"),
+    CLICK_RECENT_POST("최근글"),
+    CLICK_TOP_POST("인기글"),
+    CLICK_TOP_POST_ALL("인기글 모두보기"),
+    CLICK_FOLLOWING("구독중"),
+    CLICK_FOLLOWER("구독자"),
+    CLICK_FOLLOWER_ALL("구독자 모두보기"),
+    CLICK_ENTRY_ITEM("글"),
+    CLICK_BLOG("블로그"),
+    CLICK_BLOG_OF_ENTRY("글의 블로그"),
+    CLICK_FOLLOW("구독"),
+    CLICK_FOLLOW_CANCEL("구독취소"),
+    CLICK_SORT("선택자"),
+    CLICK_SORT_ITEM("선택자 항목"),
+    CLICK_NOTIFICATION_ITEM("알림 1건"),
+    CLICK_NOTIFICATION_BANNER("알림 내 배너"),
+    CLICK_GRAPH_ITEM("그래프"),
+    CLICK_SEE_ENTRY_VIEW("본문 보기"),
+    CLICK_BLOG_URL("블로그URL"),
+    CLICK_BLOG_DESCRIPTION_READ_MORE("설명 더보기"),
+    CLICK_BLOG_FOLLOWER_COUNT("구독자 수"),
+    CLICK_BLOG_SETTING("블로그 설정"),
+    CLICK_NOTICE_ITEM("공지 글"),
+    CLICK_NOTICE_SEE_ALL("공지 모두보기"),
+    CLICK_CATEGORY("카테고리 선택자"),
+    CLICK_CATEGORY_ITEM("카테고리 항목"),
+    CLICK_VISIBILITY_PUBLIC("공개"),
+    CLICK_VISIBILITY_PROTECTED("보호"),
+    CLICK_VISIBILITY_PRIVATE("비공개"),
+    CLICK_VISIBILITY_PROTECTED_PASSWORD("비밀번호"),
+    CLICK_MODIFY("수정"),
+    CLICK_STATISTICS("통계"),
+    CLICK_DELETE("삭제"),
+    CLICK_PIN("고정"),
+    CLICK_UNPIN("고정해제"),
+    CLICK_COMMENT("댓글"),
+    CLICK_SHARE("공유"),
+    CLICK_MORE("더보기"),
+    CLICK_REPORT("신고"),
+    CLICK_REPORT_COMPLETE("신고 접수"),
+    CLICK_COMMENT_REPLY("답글 버튼"),
+    CLICK_COMMENT_READ_MORE("댓글 더보기"),
+    CLICK_COMMENT_COMPLETE("댓글 등록"),
+    CLICK_COMMENT_MODIFY("댓글 수정"),
+    CLICK_REPLY_SEE_ALL("이전 답글 모두보기"),
+    CLICK_SETTING_DEFAULT_BLOG("대표블로그설정"),
+    CLICK_SETTING_NOTIFICATION("알림설정"),
+    CLICK_SETTING_NOTICE("서비스공지"),
+    CLICK_SETTING_APP_INFO("앱정보"),
+    CLICK_SETTING_TERMS_AND_CONDITIONS("이용약관"),
+    CLICK_SETTING_PRIVACY_POLICY("개인정보처리방침"),
+    CLICK_SETTING_OPEN_SOURCE_LICENSE("오픈소스라이선스"),
+    CLICK_SETTING_HELP("도움말"),
+    CLICK_SETTING_OPERATION_POLICY("운영정책"),
+    CLICK_SETTING_QUESTION("문의하기"),
+    CLICK_SETTING_LOGOUT("로그아웃"),
+    CLICK_SETTING_LOGOUT_CONFIRM("토스트 알림 로그아웃"),
+    CLICK_SEARCH_INPUT_FIELD("입력 필드"),
+    CLICK_SEARCH_INPUT_CLEAR("필드 비우기"),
+    CLICK_SEARCH_SEARCHING("검색하기"),
+    CLICK_SEARCH_ALL_SEARCHING("전체검색하기"),
+    CLICK_SEARCH_SEARCHING_FROM_KEYBOARD("검색_키보드"),
+    CLICK_SEARCH_RECENT_KEYWORD("최근 검색어 1건"),
+    CLICK_SEARCH_RECENT_KEYWORD_REMOVE("최근 검색어 1건 삭제"),
+    CLICK_SEARCH_RECENT_KEYWORD_REMOVE_ALL("최근 검색어 전체삭제"),
+    CLICK_SEARCH_RECENT_KEYWORD_ON("최근 검색어 저장 켜기"),
+    CLICK_SEARCH_RECENT_KEYWORD_OFF("최근 검색어 저장 끄기"),
+    CLICK_SEARCH_SUGGEST_KEYWORD("자동완성 1건"),
+    CLICK_SEARCH_SUGGEST_KEYWORD_ARROW("자동완성 화살표"),
+    CLICK_SEARCH_SUGGEST_KEYWORD_ON("자동완성 켜기"),
+    CLICK_SEARCH_SUGGEST_KEYWORD_OFF("자동완성 끄기"),
+    CLICK_SEARCH_RESULT_TAB("검색 결과 탭"),
+    CLICK_APP_UPDATE("업데이트"),
+    CLICK_SEE_DETAIL("자세히보기"),
+    CLICK_TRANSFER("전환하기"),
+    CLICK_TRANSFER_NO_MORE_SEE_WEEKEND("일주일안보기"),
+    PAGE_TRANSFER_START("전환시작안내", TiaraActionCategory.PAGE),
+    PAGE_TRANSFER_FINAL_CONFIRM("전환최종확인", TiaraActionCategory.PAGE),
+    SIGNUP_INVALIDATION("가입오류문구", TiaraActionCategory.PAGE),
+    LONG_CLICK_BOTTOM_NAVIGATION_BLOG_TOP("내 블로그 탭", TiaraActionCategory.LONG_CLICK),
+    SWIPE_HOME_STATISTICS("홈 통계카드", TiaraActionCategory.SWIPE),
+    SWIPE_SEARCH_RESULT_TAB("검색 결과 탭", TiaraActionCategory.SWIPE),
+    WELCOME_DIALOG("웰컴메시지_보기", TiaraActionCategory.NONE),
+    BLOG_TOP_CATEGORY("블로그 탑 > 스토리 크리에이터 표기 클릭", TiaraActionCategory.NONE);
+
+    public final String a;
+    public final TiaraActionCategory b;
+    public static final TiaraActionType[] c;
+    public static final EnumEntries d;
+
+    static {
+        TiaraActionType.c = arr_tiaraActionType;
+        Intrinsics.checkNotNullParameter(arr_tiaraActionType, "entries");
+        TiaraActionType.d = new a(arr_tiaraActionType);
+    }
+
+    public TiaraActionType(String s1) {
+        this.a = s1;
+        this.b = TiaraActionCategory.CLICK;
+    }
+
+    public TiaraActionType(String s1, TiaraActionCategory tiaraActionCategory0) {
+        this.a = s1;
+        this.b = tiaraActionCategory0;
+    }
+
+    @NotNull
+    public static EnumEntries getEntries() {
+        return TiaraActionType.d;
+    }
+
+    @NotNull
+    public final String getType() {
+        return this.a;
+    }
+
+    @Override  // com.kakao.android.base.tiara.TiaraBaseEnum
+    @NotNull
+    public String getValue() {
+        return this.a + this.b.getValue();
+    }
+}
+

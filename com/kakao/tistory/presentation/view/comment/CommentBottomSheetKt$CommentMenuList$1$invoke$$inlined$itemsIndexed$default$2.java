@@ -1,0 +1,31 @@
+package com.kakao.tistory.presentation.view.comment;
+
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\u0010\u0000\u001A\u0004\u0018\u00010\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001A\u00020\u0004H\n¢\u0006\u0002\b\u0005¨\u0006\u0006"}, d2 = {"<anonymous>", "", "T", "index", "", "invoke", "androidx/compose/foundation/lazy/LazyDslKt$itemsIndexed$3"}, k = 3, mv = {1, 9, 0}, xi = 0x30)
+@SourceDebugExtension({"SMAP\nLazyDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyDsl.kt\nandroidx/compose/foundation/lazy/LazyDslKt$itemsIndexed$3\n+ 2 LazyDsl.kt\nandroidx/compose/foundation/lazy/LazyDslKt$itemsIndexed$1\n*L\n1#1,433:1\n182#2:434\n*E\n"})
+public final class CommentBottomSheetKt.CommentMenuList.1.invoke..inlined.itemsIndexed.default.2 extends Lambda implements Function1 {
+    public final List a;
+
+    public CommentBottomSheetKt.CommentMenuList.1.invoke..inlined.itemsIndexed.default.2(List list0) {
+        this.a = list0;
+        super(1);
+    }
+
+    @Nullable
+    public final Object invoke(int v) {
+        this.a.get(v);
+        return null;
+    }
+
+    @Override  // kotlin.jvm.functions.Function1
+    public Object invoke(Object object0) {
+        return this.invoke(((Number)object0).intValue());
+    }
+}
+

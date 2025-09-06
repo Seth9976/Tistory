@@ -1,0 +1,43 @@
+package com.kakao.tistory.data.revenue.repository;
+
+import com.kakao.tistory.data.repository.BaseRepository_MembersInjector;
+import com.kakao.tistory.data.revenue.api.RevenueService;
+import com.kakao.tistory.domain.repository.ThrowableRepository;
+import dagger.internal.DaggerGenerated;
+import dagger.internal.Factory;
+import dagger.internal.QualifierMetadata;
+import dagger.internal.ScopeMetadata;
+import javax.inject.Provider;
+
+@DaggerGenerated
+@QualifierMetadata
+@ScopeMetadata
+public final class RevenueVendorRepositoryImpl_Factory implements Factory {
+    public final Provider a;
+    public final Provider b;
+
+    public RevenueVendorRepositoryImpl_Factory(Provider provider0, Provider provider1) {
+        this.a = provider0;
+        this.b = provider1;
+    }
+
+    public static RevenueVendorRepositoryImpl_Factory create(Provider provider0, Provider provider1) {
+        return new RevenueVendorRepositoryImpl_Factory(provider0, provider1);
+    }
+
+    public RevenueVendorRepositoryImpl get() {
+        RevenueVendorRepositoryImpl revenueVendorRepositoryImpl0 = RevenueVendorRepositoryImpl_Factory.newInstance(((RevenueService)this.a.get()));
+        BaseRepository_MembersInjector.injectThrowableRepository(revenueVendorRepositoryImpl0, ((ThrowableRepository)this.b.get()));
+        return revenueVendorRepositoryImpl0;
+    }
+
+    @Override  // javax.inject.Provider
+    public Object get() {
+        return this.get();
+    }
+
+    public static RevenueVendorRepositoryImpl newInstance(RevenueService revenueService0) {
+        return new RevenueVendorRepositoryImpl(revenueService0);
+    }
+}
+

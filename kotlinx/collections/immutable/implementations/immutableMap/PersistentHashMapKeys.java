@@ -1,0 +1,36 @@
+package kotlinx.collections.immutable.implementations.immutableMap;
+
+import java.util.Iterator;
+import kotlin.Metadata;
+import kotlin.collections.AbstractSet;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.collections.immutable.ImmutableSet;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000B\n\u0002\b\u0002\n\u0002\u0010(\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\b\u0000\u0018\u0000*\u0004\b\u0000\u0010\u0001*\u0004\b\u0001\u0010\u00022\b\u0012\u0004\u0012\u00028\u00000\u00032\b\u0012\u0004\u0012\u00028\u00000\u0004B\u001B\u0012\u0012\u0010\u0006\u001A\u000E\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u0005¢\u0006\u0004\b\u0007\u0010\bJ\u0018\u0010\u000B\u001A\u00020\n2\u0006\u0010\t\u001A\u00028\u0000H\u0096\u0002¢\u0006\u0004\b\u000B\u0010\fJ\u0016\u0010\u000E\u001A\b\u0012\u0004\u0012\u00028\u00000\rH\u0096\u0002¢\u0006\u0004\b\u000E\u0010\u000FR\u0014\u0010\u0013\u001A\u00020\u00108VX\u0096\u0004¢\u0006\u0006\u001A\u0004\b\u0011\u0010\u0012¨\u0006\u0014"}, d2 = {"Lkotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapKeys;", "K", "V", "Lkotlinx/collections/immutable/ImmutableSet;", "Lkotlin/collections/AbstractSet;", "Lkotlinx/collections/immutable/implementations/immutableMap/PersistentHashMap;", "map", "<init>", "(Lkotlinx/collections/immutable/implementations/immutableMap/PersistentHashMap;)V", "element", "", "contains", "(Ljava/lang/Object;)Z", "", "iterator", "()Ljava/util/Iterator;", "", "getSize", "()I", "size", "kotlinx-collections-immutable"}, k = 1, mv = {1, 9, 0}, xi = 0x30)
+public final class PersistentHashMapKeys extends AbstractSet implements ImmutableSet {
+    public final PersistentHashMap a;
+
+    public PersistentHashMapKeys(@NotNull PersistentHashMap persistentHashMap0) {
+        Intrinsics.checkNotNullParameter(persistentHashMap0, "map");
+        super();
+        this.a = persistentHashMap0;
+    }
+
+    @Override  // kotlin.collections.AbstractCollection
+    public boolean contains(Object object0) {
+        return this.a.containsKey(object0);
+    }
+
+    @Override  // kotlin.collections.AbstractCollection
+    public int getSize() {
+        return this.a.size();
+    }
+
+    @Override  // kotlin.collections.AbstractSet
+    @NotNull
+    public Iterator iterator() {
+        return new PersistentHashMapKeysIterator(this.a.getNode$kotlinx_collections_immutable());
+    }
+}
+

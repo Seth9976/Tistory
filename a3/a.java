@@ -1,0 +1,33 @@
+package a3;
+
+import android.animation.Animator;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Lambda;
+
+public final class a extends Lambda implements Function1 {
+    public final int w;
+    public static final a x;
+    public static final a y;
+
+    static {
+        a.x = new a(1, 0);
+        a.y = new a(1, 1);
+    }
+
+    public a(int v, int v1) {
+        this.w = v1;
+        super(v);
+    }
+
+    @Override  // kotlin.jvm.functions.Function1
+    public final Object invoke(Object object0) {
+        if(this.w != 0) {
+            Animator animator0 = (Animator)object0;
+            return Unit.INSTANCE;
+        }
+        Animator animator1 = (Animator)object0;
+        return Unit.INSTANCE;
+    }
+}
+

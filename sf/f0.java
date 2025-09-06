@@ -1,0 +1,22 @@
+package sf;
+
+import kotlin.Unit;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlinx.coroutines.JobSupport;
+import kotlinx.coroutines.selects.SelectInstance;
+
+public final class f0 extends FunctionReferenceImpl implements Function3 {
+    public static final f0 a;
+
+    static {
+        f0.a = new f0(3, JobSupport.class, "registerSelectForOnJoin", "registerSelectForOnJoin(Lkotlinx/coroutines/selects/SelectInstance;Ljava/lang/Object;)V", 0);  // 初始化器: Lkotlin/jvm/internal/FunctionReferenceImpl;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    }
+
+    @Override  // kotlin.jvm.functions.Function3
+    public final Object invoke(Object object0, Object object1, Object object2) {
+        JobSupport.access$registerSelectForOnJoin(((JobSupport)object0), ((SelectInstance)object1), object2);
+        return Unit.INSTANCE;
+    }
+}
+

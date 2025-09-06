@@ -1,0 +1,20 @@
+package dagger.hilt.android.internal.lifecycle;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import javax.inject.Qualifier;
+
+@Retention(RetentionPolicy.CLASS)
+@Target({ElementType.METHOD, ElementType.PARAMETER})
+@Qualifier
+public @interface HiltViewModelMap {
+    @Retention(RetentionPolicy.CLASS)
+    @Target({ElementType.METHOD, ElementType.PARAMETER})
+    @Qualifier
+    public @interface KeySet {
+    }
+
+}
+

@@ -1,0 +1,35 @@
+package com.kakao.tistory.presentation.screen.home.ui;
+
+import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridItemSpan;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Lambda;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\u0010\u0000\u001A\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001A\u00020\u0004H\n¢\u0006\u0002\b\u0005¨\u0006\u0006"}, d2 = {"<anonymous>", "Landroidx/compose/foundation/lazy/staggeredgrid/StaggeredGridItemSpan;", "T", "index", "", "invoke", "androidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridDslKt$itemsIndexed$4$1"}, k = 3, mv = {1, 9, 0}, xi = 0x30)
+@SourceDebugExtension({"SMAP\nLazyStaggeredGridDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyStaggeredGridDsl.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridDslKt$itemsIndexed$4$1\n*L\n1#1,469:1\n*E\n"})
+public final class HomeSlotListKt.MultiLane.2.invoke..inlined.itemsIndexed.default.3 extends Lambda implements Function1 {
+    public final Function2 a;
+    public final List b;
+
+    public HomeSlotListKt.MultiLane.2.invoke..inlined.itemsIndexed.default.3(Function2 function20, List list0) {
+        this.a = function20;
+        this.b = list0;
+        super(1);
+    }
+
+    @NotNull
+    public final StaggeredGridItemSpan invoke(int v) {
+        Object object0 = this.b.get(v);
+        return (StaggeredGridItemSpan)this.a.invoke(v, object0);
+    }
+
+    @Override  // kotlin.jvm.functions.Function1
+    public Object invoke(Object object0) {
+        return this.invoke(((Number)object0).intValue());
+    }
+}
+

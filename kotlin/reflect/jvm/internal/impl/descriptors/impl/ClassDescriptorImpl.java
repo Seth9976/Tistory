@@ -1,0 +1,451 @@
+package kotlin.reflect.jvm.internal.impl.descriptors.impl;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassConstructorDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassKind;
+import kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.DescriptorVisibilities;
+import kotlin.reflect.jvm.internal.impl.descriptors.DescriptorVisibility;
+import kotlin.reflect.jvm.internal.impl.descriptors.Modality;
+import kotlin.reflect.jvm.internal.impl.descriptors.SourceElement;
+import kotlin.reflect.jvm.internal.impl.descriptors.ValueClassRepresentation;
+import kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations;
+import kotlin.reflect.jvm.internal.impl.name.Name;
+import kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope.Empty;
+import kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope;
+import kotlin.reflect.jvm.internal.impl.storage.StorageManager;
+import kotlin.reflect.jvm.internal.impl.types.ClassTypeConstructorImpl;
+import kotlin.reflect.jvm.internal.impl.types.TypeConstructor;
+import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+public class ClassDescriptorImpl extends ClassDescriptorBase {
+    public final Modality g;
+    public final ClassKind h;
+    public final ClassTypeConstructorImpl i;
+    public MemberScope j;
+    public Set k;
+    public ClassConstructorDescriptor l;
+
+    public ClassDescriptorImpl(@NotNull DeclarationDescriptor declarationDescriptor0, @NotNull Name name0, @NotNull Modality modality0, @NotNull ClassKind classKind0, @NotNull Collection collection0, @NotNull SourceElement sourceElement0, boolean z, @NotNull StorageManager storageManager0) {
+        if(declarationDescriptor0 != null) {
+            if(name0 != null) {
+                if(modality0 != null) {
+                    if(classKind0 != null) {
+                        if(collection0 != null) {
+                            if(sourceElement0 != null) {
+                                if(storageManager0 != null) {
+                                    super(storageManager0, declarationDescriptor0, name0, sourceElement0, z);
+                                    this.g = modality0;
+                                    this.h = classKind0;
+                                    this.i = new ClassTypeConstructorImpl(this, Collections.emptyList(), collection0, storageManager0);
+                                    return;
+                                }
+                                ClassDescriptorImpl.a(6);
+                                throw null;
+                            }
+                            ClassDescriptorImpl.a(5);
+                            throw null;
+                        }
+                        ClassDescriptorImpl.a(4);
+                        throw null;
+                    }
+                    ClassDescriptorImpl.a(3);
+                    throw null;
+                }
+                ClassDescriptorImpl.a(2);
+                throw null;
+            }
+            ClassDescriptorImpl.a(1);
+            throw null;
+        }
+        ClassDescriptorImpl.a(0);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.impl.ClassDescriptorBase
+    public static void a(int v) {
+        IllegalArgumentException illegalArgumentException0;
+        int v1;
+        String s;
+        switch(v) {
+            case 9: 
+            case 10: 
+            case 11: 
+            case 13: 
+            case 14: 
+            case 15: 
+            case 16: 
+            case 17: 
+            case 18: 
+            case 19: {
+                s = "@NotNull method %s.%s must not return null";
+                break;
+            }
+            default: {
+                s = "Argument for @NotNull parameter \'%s\' of %s.%s must not be null";
+            }
+        }
+        switch(v) {
+            case 9: 
+            case 10: 
+            case 11: 
+            case 13: 
+            case 14: 
+            case 15: 
+            case 16: 
+            case 17: 
+            case 18: 
+            case 19: {
+                v1 = 2;
+                break;
+            }
+            default: {
+                v1 = 3;
+            }
+        }
+        Object[] arr_object = new Object[v1];
+        switch(v) {
+            case 1: {
+                arr_object[0] = "name";
+                break;
+            }
+            case 2: {
+                arr_object[0] = "modality";
+                break;
+            }
+            case 3: {
+                arr_object[0] = "kind";
+                break;
+            }
+            case 4: {
+                arr_object[0] = "supertypes";
+                break;
+            }
+            case 5: {
+                arr_object[0] = "source";
+                break;
+            }
+            case 6: {
+                arr_object[0] = "storageManager";
+                break;
+            }
+            case 7: {
+                arr_object[0] = "unsubstitutedMemberScope";
+                break;
+            }
+            case 8: {
+                arr_object[0] = "constructors";
+                break;
+            }
+            case 12: {
+                arr_object[0] = "kotlinTypeRefiner";
+                break;
+            }
+            case 9: 
+            case 10: 
+            case 11: 
+            case 13: 
+            case 14: 
+            case 15: 
+            case 16: 
+            case 17: 
+            case 18: 
+            case 19: {
+                arr_object[0] = "kotlin/reflect/jvm/internal/impl/descriptors/impl/ClassDescriptorImpl";
+                break;
+            }
+            default: {
+                arr_object[0] = "containingDeclaration";
+            }
+        }
+        switch(v) {
+            case 9: {
+                arr_object[1] = "getAnnotations";
+                break;
+            }
+            case 10: {
+                arr_object[1] = "getTypeConstructor";
+                break;
+            }
+            case 11: {
+                arr_object[1] = "getConstructors";
+                break;
+            }
+            case 13: {
+                arr_object[1] = "getUnsubstitutedMemberScope";
+                break;
+            }
+            case 14: {
+                arr_object[1] = "getStaticScope";
+                break;
+            }
+            case 15: {
+                arr_object[1] = "getKind";
+                break;
+            }
+            case 16: {
+                arr_object[1] = "getModality";
+                break;
+            }
+            case 17: {
+                arr_object[1] = "getVisibility";
+                break;
+            }
+            case 18: {
+                arr_object[1] = "getDeclaredTypeParameters";
+                break;
+            }
+            case 19: {
+                arr_object[1] = "getSealedSubclasses";
+                break;
+            }
+            default: {
+                arr_object[1] = "kotlin/reflect/jvm/internal/impl/descriptors/impl/ClassDescriptorImpl";
+            }
+        }
+        switch(v) {
+            case 7: 
+            case 8: {
+                arr_object[2] = "initialize";
+                break;
+            }
+            case 12: {
+                arr_object[2] = "getUnsubstitutedMemberScope";
+                break;
+            }
+            case 9: 
+            case 10: 
+            case 11: 
+            case 13: 
+            case 14: 
+            case 15: 
+            case 16: 
+            case 17: 
+            case 18: 
+            case 19: {
+                break;
+            }
+            default: {
+                arr_object[2] = "<init>";
+            }
+        }
+        String s1 = String.format(s, arr_object);
+        switch(v) {
+            case 9: 
+            case 10: 
+            case 11: 
+            case 13: 
+            case 14: 
+            case 15: 
+            case 16: 
+            case 17: 
+            case 18: 
+            case 19: {
+                illegalArgumentException0 = new IllegalStateException(s1);
+                break;
+            }
+            default: {
+                illegalArgumentException0 = new IllegalArgumentException(s1);
+            }
+        }
+        throw illegalArgumentException0;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotated
+    @NotNull
+    public Annotations getAnnotations() {
+        Annotations annotations0 = Annotations.Companion.getEMPTY();
+        if(annotations0 != null) {
+            return annotations0;
+        }
+        ClassDescriptorImpl.a(9);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    @Nullable
+    public ClassDescriptor getCompanionObjectDescriptor() {
+        return null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    @NotNull
+    public Collection getConstructors() {
+        Collection collection0 = this.k;
+        if(collection0 != null) {
+            return collection0;
+        }
+        ClassDescriptorImpl.a(11);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    @NotNull
+    public List getDeclaredTypeParameters() {
+        List list0 = Collections.emptyList();
+        if(list0 != null) {
+            return list0;
+        }
+        ClassDescriptorImpl.a(18);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    @NotNull
+    public ClassKind getKind() {
+        ClassKind classKind0 = this.h;
+        if(classKind0 != null) {
+            return classKind0;
+        }
+        ClassDescriptorImpl.a(15);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    @NotNull
+    public Modality getModality() {
+        Modality modality0 = this.g;
+        if(modality0 != null) {
+            return modality0;
+        }
+        ClassDescriptorImpl.a(16);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    @NotNull
+    public Collection getSealedSubclasses() {
+        Collection collection0 = Collections.emptyList();
+        if(collection0 != null) {
+            return collection0;
+        }
+        ClassDescriptorImpl.a(19);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    @NotNull
+    public MemberScope getStaticScope() {
+        MemberScope memberScope0 = Empty.INSTANCE;
+        if(memberScope0 != null) {
+            return memberScope0;
+        }
+        ClassDescriptorImpl.a(14);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
+    @NotNull
+    public TypeConstructor getTypeConstructor() {
+        TypeConstructor typeConstructor0 = this.i;
+        if(typeConstructor0 != null) {
+            return typeConstructor0;
+        }
+        ClassDescriptorImpl.a(10);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.impl.ModuleAwareClassDescriptor
+    @NotNull
+    public MemberScope getUnsubstitutedMemberScope(@NotNull KotlinTypeRefiner kotlinTypeRefiner0) {
+        if(kotlinTypeRefiner0 != null) {
+            MemberScope memberScope0 = this.j;
+            if(memberScope0 != null) {
+                return memberScope0;
+            }
+            ClassDescriptorImpl.a(13);
+            throw null;
+        }
+        ClassDescriptorImpl.a(12);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    public ClassConstructorDescriptor getUnsubstitutedPrimaryConstructor() {
+        return this.l;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    @Nullable
+    public ValueClassRepresentation getValueClassRepresentation() {
+        return null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    @NotNull
+    public DescriptorVisibility getVisibility() {
+        DescriptorVisibility descriptorVisibility0 = DescriptorVisibilities.PUBLIC;
+        if(descriptorVisibility0 != null) {
+            return descriptorVisibility0;
+        }
+        ClassDescriptorImpl.a(17);
+        throw null;
+    }
+
+    public final void initialize(@NotNull MemberScope memberScope0, @NotNull Set set0, @Nullable ClassConstructorDescriptor classConstructorDescriptor0) {
+        if(memberScope0 != null) {
+            if(set0 != null) {
+                this.j = memberScope0;
+                this.k = set0;
+                this.l = classConstructorDescriptor0;
+                return;
+            }
+            ClassDescriptorImpl.a(8);
+            throw null;
+        }
+        ClassDescriptorImpl.a(7);
+        throw null;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
+    public boolean isActual() {
+        return false;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    public boolean isCompanionObject() {
+        return false;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    public boolean isData() {
+        return false;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
+    public boolean isExpect() {
+        return false;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    public boolean isFun() {
+        return false;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    public boolean isInline() {
+        return false;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
+    public boolean isInner() {
+        return false;
+    }
+
+    @Override  // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
+    public boolean isValue() {
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return "class " + this.getName();
+    }
+}
+

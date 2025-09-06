@@ -1,0 +1,18 @@
+package kotlinx.collections.immutable.implementations.immutableMap;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u0000*\u0004\b\u0000\u0010\u0001*\u0004\b\u0001\u0010\u00022\u0014\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00010\u0003B\u0019\u0012\u0012\u0010\u0004\u001A\u000E\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u0005¢\u0006\u0002\u0010\u0006¨\u0006\u0007"}, d2 = {"Lkotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilderKeysIterator;", "K", "V", "Lkotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilderBaseIterator;", "builder", "Lkotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;", "(Lkotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)V", "kotlinx-collections-immutable"}, k = 1, mv = {1, 9, 0}, xi = 0x30)
+public final class PersistentHashMapBuilderKeysIterator extends PersistentHashMapBuilderBaseIterator {
+    public PersistentHashMapBuilderKeysIterator(@NotNull PersistentHashMapBuilder persistentHashMapBuilder0) {
+        Intrinsics.checkNotNullParameter(persistentHashMapBuilder0, "builder");
+        TrieNodeBaseIterator[] arr_trieNodeBaseIterator = new TrieNodeBaseIterator[8];
+        for(int v = 0; v < 8; ++v) {
+            arr_trieNodeBaseIterator[v] = new TrieNodeKeysIterator();
+        }
+        super(persistentHashMapBuilder0, arr_trieNodeBaseIterator);
+    }
+}
+
